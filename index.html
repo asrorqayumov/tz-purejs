@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pop up</title>
+  </head>
+  <body>
+    <div class="btn__wrapper">
+      <button class="btn" id="btn__open">Open modal</button>
+    </div>
+    <div id="modal__wrapper">
+      <div class="modal">
+        <button id="btn__close">x</button>
+        <div class="modal__body">
+          <div class="modal__header">
+            <h2 class="modal__title">Междугородние такси</h2>
+            <p class="modal__text"></p>
+          </div>
+          <form class="modal__form">
+            <input type="text" placeholder="Имя" required class="form__input" />
+            <br />
+
+            <div class="input__collection form__input">
+              <select name="countries" id="country__select"></select>
+              <input type="number" required id="country__input" />
+            </div>
+
+            <div class="input__collection2">
+              <input
+                class="form__input mr-2"
+                type="text"
+                placeholder="Откуда"
+              />
+              <input
+                class="form__input"
+                required
+                type="text"
+                placeholder="Куда"
+              />
+            </div>
+
+            <input
+              type="text"
+              required
+              placeholder="Дата поезки"
+              class="form__input"
+            />
+            <br />
+
+            <textarea
+              name=""
+              id="modal__textarea"
+              class="form__input w-50"
+              cols="20"
+              rows="5"
+              placeholder="Кородкое сообщение"
+              required
+            ></textarea>
+
+            <br />
+            <button class="btn modal__submit__btn">Отправить</button>
+            <button class="btn modal__submit__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
